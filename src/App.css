@@ -10,8 +10,19 @@
 
 body {
     background-color: #444;
-
 }
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    gap: 1rem;
+}
+
 .card {
     display: flex;
     justify-content: center;
@@ -24,7 +35,7 @@ body {
     cursor: pointer;
     background-color: white;
     height: 150px;
-    width: 150px;
+
     transform: perspective(2000px) rotateY(var(--rotate-y,0));
 }
 
